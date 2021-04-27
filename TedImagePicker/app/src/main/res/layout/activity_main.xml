@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/edt_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="price"
+        android:paddingStart="20dp"
+        android:text="Phong"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/edt_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="NumberofPage"
+        android:paddingStart="20dp"
+        android:text="123"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/mText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="a"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnSelect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="select image" />
+
+        <Space
+            android:layout_width="30dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnCreate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Creat Product" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp" />
+
+</LinearLayout>
